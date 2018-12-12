@@ -102,9 +102,23 @@ public class SelectScreenManager : MonoBehaviour
 	else
 	{
 		if(charManager.players[0].hasCharacter
-		&& charManager.players[1].hasCharacter)
+			&& charManager.players[1].hasCharacter)
 		{
 			bothPlayersSelected = true;
 		}
+
 	}
+
+
+
+	void HandleSelectScreenInput(PlayerInterfaces p1, string playerId)
+{
+	#region Grid Navigation
+
+	/*To navigate in the grid
+	* we simply change the active x and y to select what entry is active
+	* we also smooth out the input so if the user keeps pressing the button
+	* it won't switch more than once over half a second 
+	*/
+}
 }
