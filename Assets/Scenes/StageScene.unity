@@ -728,7 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54e88e12696853b499613de767cc7504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 2.5
   jumpForce: 6
   left: 276
   right: 275
@@ -737,7 +737,7 @@ MonoBehaviour:
   punch: 113
   kick: 119
   groundCheckPoint: {fileID: 128553967}
-  groundCheckRadius: 0.2
+  groundCheckRadius: 0.3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
@@ -798,8 +798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881967418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.928, y: -3.031, z: -0.123046875}
-  m_LocalScale: {x: 1.916, y: 1.916, z: 1.916}
+  m_LocalPosition: {x: 4.873, y: -2.99, z: -0.123046875}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 128553967}
   m_Father: {fileID: 0}

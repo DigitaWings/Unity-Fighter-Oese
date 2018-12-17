@@ -22,10 +22,14 @@ public class player1Script : MonoBehaviour
 
     public bool isGrounded;
 
+    private Animator anim;
+
+
     // Use this for initialization
     void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,5 +55,18 @@ public class player1Script : MonoBehaviour
         {
             theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
         }
+
+       if(theRB.velocity.x > 0)
+      {
+          transform.localScale = new Vector3(-2, 2, 2);
+       }   else if(theRB.velocity.x < 0)
+
+       {
+            transform.localScale = new Vector3(2, 2, 2);
+       }
+       
+        anim.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
+        anim.SetBool("Grounded", isGrounded);
+
     }
 }
