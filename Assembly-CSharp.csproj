@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scrips\cameraScript.cs" />
+    <Compile Include="Assets\Scrips\player1Attack.cs" />
     <Compile Include="Assets\Scrips\player1Script.cs" />
     <Compile Include="Assets\Scrips\sceneTransition.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

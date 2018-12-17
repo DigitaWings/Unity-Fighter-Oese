@@ -16,7 +16,7 @@ TagManager:
   - Background
   - Sprites
   - Player
-  - 
+  - Player2
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 703210271
+    locked: 0
+  - name: Player2
+    uniqueID: 272441023
     locked: 0
