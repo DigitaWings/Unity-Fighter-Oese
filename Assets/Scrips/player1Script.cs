@@ -14,7 +14,13 @@ public class player1Script : MonoBehaviour
     public KeyCode punch;
     public KeyCode kick;
 
-        private Rigidbody2D theRB;
+    private Rigidbody2D theRB;
+
+    public Transform groundCheckPoint;
+    public float groundCheckRadius;
+    public LayerMask whatIsGround;
+
+    public bool isGrounded;
 
     // Use this for initialization
     void Start()
@@ -24,7 +30,10 @@ public class player1Script : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, groundCheckRadius, whatIsGround);
+
         if (Input.GetKey(left))
         {
             theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
@@ -33,5 +42,14 @@ public class player1Script : MonoBehaviour
         {
             theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
         }
+        else
+        {
+            theRB.velocity = new Vector2(0, theRB.velocity.y);
+        }
+
+        if (Input.GetKeyDown(up) && isGrounded)
+        {
+            theRB.velocity = new Vector2(theRB.velocity.x, jumpForce);
         }
     }
+}

@@ -70,11 +70,11 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/peter/AppData/Local/GitHubDesktop/app-1.5.0/Unity-Fighter-Oese/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/peter/AppData/Local/GitHubDesktop/app-1.5.0/Unity-Fighter-Oese/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/peter/AppData/Local/GitHubDesktop/app-1.5.0/Unity-Fighter-Oese/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/peter/AppData/Local/GitHubDesktop/app-1.5.0/Unity-Fighter-Oese/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/peter/AppData/Local/GitHubDesktop/app-1.5.0/Unity-Fighter-Oese/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
@@ -294,9 +294,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/peter/AppData/Local/GitHubDesktop/app-1.5.0/Unity-Fighter-Oese/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Purchasing">
-      <HintPath>C:/Users/peter/AppData/Local/GitHubDesktop/app-1.5.0/Unity-Fighter-Oese/Library/PackageCache/com.unity.purchasing@2.0.3/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
