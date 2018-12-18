@@ -9,13 +9,27 @@ public class player1Attack : MonoBehaviour
     public KeyCode kick;
     public KeyCode punch;
 
-    private float timeBTWattack;
-    public float starttimeBTWattack;
+    private float timeBTWattackpunch;
+    public float starttimeBTWattackpunch;
 
-    public Transform attackPos;
+    private float timeBTWattackkick;
+    public float starttimeBTWattackkick;
+
     public LayerMask whatIsEnemy;
-    public float attackRange;
     public int damage;
+
+    public Transform attackPosPunch;
+    public float attackRangePunch;
+
+    public Transform attackPosKick;
+    public float attackRangeKick;
+
+    public GameObject animeprojectile;
+    public Transform shotpoint;
+    private float timeBtwAnime;
+    public float startTimeBtwAnime;
+
+
 
     private Animator anim;
 
@@ -28,31 +42,68 @@ public class player1Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeBTWattack <= 0)
+        if (timeBTWattackpunch <= 0)
         {
             if (Input.GetKey(punch))
             {
                 anim.ResetTrigger("punch");
                 anim.SetTrigger("punch");
-                Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemy);
+                Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosPunch.position, attackRangePunch, whatIsEnemy);
                 for (int i = 0; i < enemyToDamage.Length; i++)
                 {
                     enemyToDamage[i].GetComponent<Christian>().TakeDamage(damage);
 
                 }
             }
-            timeBTWattack = starttimeBTWattack;
+            timeBTWattackpunch = starttimeBTWattackpunch;
         }
         else
         {
-            timeBTWattack -= Time.deltaTime;
+            timeBTWattackpunch -= Time.deltaTime;
         }
-        
+
+        if (timeBTWattackkick <= 0)
+        {
+            if (Input.GetKey(kick))
+            {
+                anim.ResetTrigger("kick");
+                anim.SetTrigger("kick");
+                Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosKick.position, attackRangeKick, whatIsEnemy);
+                for (int i = 0; i < enemyToDamage.Length; i++)
+                {
+                    enemyToDamage[i].GetComponent<Christian>().TakeDamage(damage);
+
+                }
+            }
+            timeBTWattackkick = starttimeBTWattackkick;
+        }
+        else
+        {
+            timeBTWattackkick -= Time.deltaTime;
+        }
+        if(timeBtwAnime <= 0)
+        {
+            if (Input.GetKey(special))
+            {
+                Instantiate(animeprojectile, shotpoint.position, transform.rotation);
+                timeBtwAnime = startTimeBtwAnime;
+            }
+        }
+        else
+        {
+            timeBtwAnime -= Time.deltaTime;
+        }
+       
+
     }
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPos.position,attackRange);
+        Gizmos.DrawWireSphere(attackPosPunch.position,attackRangePunch);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(attackPosKick.position, attackRangeKick);
+
 
     }
 }
