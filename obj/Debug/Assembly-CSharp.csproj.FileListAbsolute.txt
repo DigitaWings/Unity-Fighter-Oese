@@ -1,0 +1,2 @@
+C:\Users\peter\Documents\GitHub\Unity-Fighter-Oese\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\peter\Documents\GitHub\Unity-Fighter-Oese\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

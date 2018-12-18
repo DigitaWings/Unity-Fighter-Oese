@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6287433144433360093}
   - component: {fileID: 6287433144433360082}
-  m_Layer: 0
+  - component: {fileID: 4726414547324165073}
+  m_Layer: 10
   m_Name: AnimeProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,17 +66,31 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 703210271
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 613900d7c3e51634183ad19753f59557, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bef4c28742b457c43a3570488d104372, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.203125, y: 3.8359375}
+  m_Size: {x: 4.1, y: 4.91}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4726414547324165073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6287433144433360083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec2fb3eab0037e42b85173a5b541cb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  lifeTime: 0.5
