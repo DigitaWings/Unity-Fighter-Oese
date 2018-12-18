@@ -17,10 +17,12 @@ public class player1Attack : MonoBehaviour
     public float attackRange;
     public int damage;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +32,8 @@ public class player1Attack : MonoBehaviour
         {
             if (Input.GetKey(punch))
             {
+                anim.ResetTrigger("punch");
+                anim.SetTrigger("punch");
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemy);
                 for (int i = 0; i < enemyToDamage.Length; i++)
                 {

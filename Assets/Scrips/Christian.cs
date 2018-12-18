@@ -10,9 +10,6 @@ public class Christian : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode up;
-    public KeyCode special;
-    public KeyCode punch;
-    public KeyCode kick;
 
     private Rigidbody2D theRB;
 
@@ -63,12 +60,12 @@ public class Christian : MonoBehaviour
 
         if (theRB.velocity.x > 0)
         {
-            transform.localScale = new Vector3(2, 2, 2);
+            transform.localScale = new Vector3(1.6f, 1.6f, 1.6f);
         }
         else if (theRB.velocity.x < 0)
 
         {
-            transform.localScale = new Vector3(-2, 2, 2);
+            transform.localScale = new Vector3(-1.6f, 1.6f, 1.6f);
         }
 
         anim.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
