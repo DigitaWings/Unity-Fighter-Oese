@@ -10,9 +10,6 @@ public class player1Script : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode up;
-    public KeyCode special;
-    public KeyCode punch;
-    public KeyCode kick;
 
     private Rigidbody2D theRB;
 
