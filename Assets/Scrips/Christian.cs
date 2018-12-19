@@ -71,18 +71,10 @@ public class Christian : MonoBehaviour
 
         anim.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
         anim.SetBool("Grounded", isGrounded);
-        if(dazedTime <= 0)
-        {
-            theRB.velocity = new Vector2(theRB.velocity.x, theRB.velocity.y);
-        }
-        else
-        {
-            theRB.velocity = new Vector2(0, 0);
-            dazedTime -= Time.deltaTime;
-        }
+     
         if (health <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("Scenes/EsbenWins");
         }
         
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player1Script : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class player1Script : MonoBehaviour
     public KeyCode left;
     public KeyCode right;
     public KeyCode up;
+
+    public int health;
 
     private Rigidbody2D theRB;
 
@@ -65,5 +68,16 @@ public class player1Script : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(theRB.velocity.x));
         anim.SetBool("Grounded", isGrounded);
 
+        if(health <= 0)
+        {
+            SceneManager.LoadScene("Scenes/christianwins");
+        }
     }
+
+    public void TakeDamage(int damage)
+    {
+        anim.SetTrigger("hurt");
+        health -= damage;
+    }
+
 }

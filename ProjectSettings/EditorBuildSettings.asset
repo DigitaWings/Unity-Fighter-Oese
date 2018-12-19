@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StageScene.unity
     guid: 8e15a8cabfc72874d813a1a3ea044d3b
+  - enabled: 1
+    path: Assets/Scenes/EsbenWins.unity
+    guid: 640fe86218e9f434dbd1ce2f15278d25
+  - enabled: 1
+    path: Assets/Scenes/christianwins.unity
+    guid: 2799dcad46a85b44bbd1c6b25dc388e2
   m_configObjects: {}

@@ -85,6 +85,7 @@ public class player1Attack : MonoBehaviour
         {
             if (Input.GetKey(special))
             {
+                anim.SetTrigger("special");
                 Instantiate(animeprojectile, shotpoint.position, transform.rotation);
                 timeBtwAnime = startTimeBtwAnime;
             }
