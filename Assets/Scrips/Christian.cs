@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Christian : MonoBehaviour
 {
@@ -79,10 +80,10 @@ public class Christian : MonoBehaviour
             theRB.velocity = new Vector2(0, 0);
             dazedTime -= Time.deltaTime;
         }
-        //if (health <= 0)
-       // {
-            //Go to Esben Victory
-        //}
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
         
 
     }
@@ -90,7 +91,6 @@ public class Christian : MonoBehaviour
     public void TakeDamage(int damage)
     {
         anim.SetTrigger("hurt");
-        dazedTime = startDazedTime;
         health -= damage;
     }
 }
