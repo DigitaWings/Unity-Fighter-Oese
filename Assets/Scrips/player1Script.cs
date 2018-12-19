@@ -76,6 +76,7 @@ public class player1Script : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.
         anim.SetTrigger("hurt");
         health -= damage;
     }
