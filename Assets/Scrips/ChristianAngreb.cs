@@ -51,7 +51,7 @@ public class ChristianAngreb : MonoBehaviour
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosPunch.position, attackRangePunch, whatIsEnemy);
                 for (int i = 0; i < enemyToDamage.Length; i++)
                 {
-                    enemyToDamage[i].GetComponent<Christian>().TakeDamage(damage);
+                    enemyToDamage[i].GetComponent<Esben>().TakeDamage(damage);
 
                 }
             }
@@ -71,7 +71,7 @@ public class ChristianAngreb : MonoBehaviour
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosKick.position, attackRangeKick, whatIsEnemy);
                 for (int i = 0; i < enemyToDamage.Length; i++)
                 {
-                    enemyToDamage[i].GetComponent<Christian>().TakeDamage(damage);
+                    enemyToDamage[i].GetComponent<Esben>().TakeDamage(damage);
 
                 }
             }

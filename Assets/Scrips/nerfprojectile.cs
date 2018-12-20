@@ -20,18 +20,18 @@ public class nerfprojectile : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance, whatIsEnemy);
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.up, distance, whatIsEnemy);
         if (hitInfo.collider != null)
         {
             if (hitInfo.collider.CompareTag("Esben"))
             {
                 Debug.Log("NERF HIT");
-                hitInfo.collider.GetComponent<player1Script>().TakeDamage(damage);
+                hitInfo.collider.GetComponent<Esben>().TakeDamage(damage);
             }
             DestroyProjectile();
         }
 
-        transform.Translate(transform.right * speed * Time.deltaTime);
+        transform.Translate(transform.up * speed * Time.deltaTime);
     }
     void DestroyProjectile()
     {
