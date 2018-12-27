@@ -78,6 +78,7 @@ public class Esben : MonoBehaviour
     {
         Debug.Log("EsbenDamageTaken");
         anim.SetTrigger("hurt");
+        anim.ResetTrigger("hurt");
         health -= damage;
     }
 

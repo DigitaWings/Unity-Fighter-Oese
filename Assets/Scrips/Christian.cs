@@ -23,8 +23,6 @@ public class Christian : MonoBehaviour
     private Animator anim;
 
     public int health;
-    private float dazedTime;
-    public float startDazedTime;
 
 
 

@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 1442050225}
   m_Layer: 11
   m_Name: Christian
-  m_TagString: Untagged
+  m_TagString: Christian
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1179,7 +1179,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  jumpForce: 9
+  jumpForce: 18
   left: 122
   right: 99
   up: 115
@@ -1212,7 +1212,6 @@ MonoBehaviour:
     m_Bits: 512
   isGrounded: 0
   health: 5
-  startDazedTime: 0.2
 --- !u!95 &1442050225
 Animator:
   serializedVersion: 3
@@ -1338,7 +1337,7 @@ GameObject:
   - component: {fileID: 1881967424}
   m_Layer: 10
   m_Name: Esben
-  m_TagString: Untagged
+  m_TagString: Esben
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
