@@ -1245,9 +1245,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  jumpForce: 18
+  jumpForce: 14
   left: 122
   right: 99
   up: 115
@@ -1386,9 +1386,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
+  - name: Punch
+    clip: {fileID: 8300000, guid: 165fe59ed0f9c864c8c406df2632c328, type: 3}
+    volume: 0.7
+    pitch: 0
+  - name: Anime
+    clip: {fileID: 8300000, guid: bf0bdd4a0f84db24a87df0ec5faf2d7c, type: 3}
+    volume: 0.7
+    pitch: 0
+  - name: Nerf
+    clip: {fileID: 8300000, guid: fb51fd864b894bb439229845605afc0d, type: 3}
+    volume: 0.7
     pitch: 0
 --- !u!4 &1700358726
 Transform:

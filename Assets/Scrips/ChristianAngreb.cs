@@ -46,6 +46,7 @@ public class ChristianAngreb : MonoBehaviour
         {
             if (Input.GetKey(punch))
             {
+                
                 anim.ResetTrigger("punch");
                 anim.SetTrigger("punch");
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosPunch.position, attackRangePunch, whatIsEnemy);
@@ -66,6 +67,7 @@ public class ChristianAngreb : MonoBehaviour
         {
             if (Input.GetKey(kick))
             {
+                
                 anim.ResetTrigger("kick");
                 anim.SetTrigger("kick");
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosKick.position, attackRangeKick, whatIsEnemy);
@@ -85,6 +87,7 @@ public class ChristianAngreb : MonoBehaviour
         {
             if (Input.GetKey(special))
             {
+                
                 anim.SetTrigger("special;");
                 Instantiate(nerfprojectile, shotpoint.position, transform.rotation);
                 timeBtwNerf = startTimeBtwNerf;
