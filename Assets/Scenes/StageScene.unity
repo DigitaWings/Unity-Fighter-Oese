@@ -1392,9 +1392,9 @@ MonoBehaviour:
     volume: 0.7
     pitch: 1
   - name: Anime
-    clip: {fileID: 8300000, guid: bf0bdd4a0f84db24a87df0ec5faf2d7c, type: 3}
-    volume: 0.7
-    pitch: 1
+    clip: {fileID: 8300000, guid: 4b5f2ffeb343b924a82aba01ffbdb203, type: 3}
+    volume: 0.318
+    pitch: 1.55
   - name: Nerf
     clip: {fileID: 8300000, guid: fb51fd864b894bb439229845605afc0d, type: 3}
     volume: 0.7

@@ -73,6 +73,7 @@ public class ChristianAngreb : MonoBehaviour
                 manager.PlaySound("Kick");
                 anim.ResetTrigger("kick");
                 anim.SetTrigger("kick");
+                anim.ResetTrigger("kick");
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosKick.position, attackRangeKick, whatIsEnemy);
                 for (int i = 0; i < enemyToDamage.Length; i++)
                 {
@@ -91,8 +92,8 @@ public class ChristianAngreb : MonoBehaviour
             if (Input.GetKey(special))
             {
                 manager.PlaySound("Nerf");
-                anim.SetTrigger("special;");
                 anim.ResetTrigger("special");
+                anim.SetTrigger("special");
                 Instantiate(nerfprojectile, shotpoint.position, transform.rotation);
                 timeBtwNerf = startTimeBtwNerf;
             }

@@ -81,7 +81,9 @@ public class Christian : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Debug.Log("ChristianDamageTaken");
+        anim.ResetTrigger("hurt");
         anim.SetTrigger("hurt");
+        anim.ResetTrigger("hurt");
         health -= damage;
     }
 }
