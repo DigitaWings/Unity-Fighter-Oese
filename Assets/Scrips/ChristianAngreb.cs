@@ -5,6 +5,8 @@ using UnityEngine;
 public class ChristianAngreb : MonoBehaviour
 {
 
+    public AudioManager manager;
+
     public KeyCode special;
     public KeyCode kick;
     public KeyCode punch;
@@ -46,7 +48,8 @@ public class ChristianAngreb : MonoBehaviour
         {
             if (Input.GetKey(punch))
             {
-                
+                manager.PlaySound("Punch");
+
                 anim.ResetTrigger("punch");
                 anim.SetTrigger("punch");
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosPunch.position, attackRangePunch, whatIsEnemy);
@@ -67,7 +70,7 @@ public class ChristianAngreb : MonoBehaviour
         {
             if (Input.GetKey(kick))
             {
-                
+                manager.PlaySound("Kick");
                 anim.ResetTrigger("kick");
                 anim.SetTrigger("kick");
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosKick.position, attackRangeKick, whatIsEnemy);
@@ -87,8 +90,9 @@ public class ChristianAngreb : MonoBehaviour
         {
             if (Input.GetKey(special))
             {
-                
+                manager.PlaySound("Nerf");
                 anim.SetTrigger("special;");
+                anim.ResetTrigger("special");
                 Instantiate(nerfprojectile, shotpoint.position, transform.rotation);
                 timeBtwNerf = startTimeBtwNerf;
             }

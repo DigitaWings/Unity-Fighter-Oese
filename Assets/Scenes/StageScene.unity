@@ -1267,7 +1267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  jumpForce: 14
+  jumpForce: 11
   left: 122
   right: 99
   up: 115
@@ -1309,6 +1309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79a2b46438cb6a74dafb19cfa6c4cc90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1700358725}
   special: 117
   kick: 105
   punch: 111
@@ -1389,15 +1390,19 @@ MonoBehaviour:
   - name: Punch
     clip: {fileID: 8300000, guid: 165fe59ed0f9c864c8c406df2632c328, type: 3}
     volume: 0.7
-    pitch: 0
+    pitch: 1
   - name: Anime
     clip: {fileID: 8300000, guid: bf0bdd4a0f84db24a87df0ec5faf2d7c, type: 3}
     volume: 0.7
-    pitch: 0
+    pitch: 1
   - name: Nerf
     clip: {fileID: 8300000, guid: fb51fd864b894bb439229845605afc0d, type: 3}
     volume: 0.7
-    pitch: 0
+    pitch: 1
+  - name: Kick
+    clip: {fileID: 8300000, guid: 8cd6b78c1be23f84e8629e66ec0db4cf, type: 3}
+    volume: 0.7
+    pitch: 1
 --- !u!4 &1700358726
 Transform:
   m_ObjectHideFlags: 0
@@ -1632,6 +1637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0721837901233342b09d6fb6a44876f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 1700358725}
   special: 113
   kick: 119
   punch: 101
