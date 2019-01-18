@@ -71,9 +71,9 @@ public class ChristianAngreb : MonoBehaviour
             if (Input.GetKey(kick))
             {
                 manager.PlaySound("Kick");
+                Debug.Log("Christian Kick");
                 anim.ResetTrigger("kick");
                 anim.SetTrigger("kick");
-                anim.ResetTrigger("kick");
                 Collider2D[] enemyToDamage = Physics2D.OverlapCircleAll(attackPosKick.position, attackRangeKick, whatIsEnemy);
                 for (int i = 0; i < enemyToDamage.Length; i++)
                 {
