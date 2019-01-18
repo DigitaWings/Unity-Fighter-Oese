@@ -12,7 +12,7 @@ public class sceneTransition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("u"))
         {
             Debug.Log("START");
             SceneManager.LoadScene(1);

@@ -1320,9 +1320,9 @@ MonoBehaviour:
     m_Bits: 1024
   damage: 1
   attackPosPunch: {fileID: 1025890105}
-  attackRangePunch: 1
+  attackRangePunch: 0.61
   attackPosKick: {fileID: 159896017}
-  attackRangeKick: 1
+  attackRangeKick: 0.62
   nerfprojectile: {fileID: 5486589259773476025, guid: 6d75926c05915a249bf87680ef25a869,
     type: 3}
   shotpoint: {fileID: 270738648}
